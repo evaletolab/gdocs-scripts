@@ -79,7 +79,7 @@ function ConvertToMarkdown() {
   MailApp.sendEmail(Session.getActiveUser().getEmail(), 
                     "[MARKDOWN_MAKER] "+DocumentApp.getActiveDocument().getName(), 
                     "Your converted markdown document is attached (converted from "+DocumentApp.getActiveDocument().getUrl()+")"+
-                    "\n\nDon't know how to use the format options? See http://github.com/mangini/gdocs2md\n",
+                    "\n\nDon't know how to use the format options? See https://github.com/evaletolab/gdocs-scripts\n",
                     { "attachments": attachments });
 }
 
